@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="library">Library</h1>
+    </header>
+    <main>
+      <div class="flex-container">
+        <button id="addBtn">Add book</button>
+        <button id="removeBtnAll">Remove all</button>
+      </div>
+      <div class="main-container">
+        <!-- <button id="addBtn" class="btn-add">Add book</button>
+        <button id="removeBtnAll" class="btn-remove-all">Remove all</button> -->
+        <div class="form-container" id="form">
+          <form id="book-form" class="book-form">
+            <input type="text" id="title" placeholder="Title" required />
+            <input type="text" id="author" placeholder="Author" required />
+            <input type="number" id="pages" placeholder="Pages" min="0" required />
+            <input type="checkbox" id="checkbox" /><span> is read</span>
+            <input type="submit" value="Submit" id="submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="cards" id="card-container"></div>
+    <footer>
+      <p>Lucrecia Aloi</p>
+      <a href="https://github.com/lumad29" target="_blank"> <i class="fa fa-github"></i></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
